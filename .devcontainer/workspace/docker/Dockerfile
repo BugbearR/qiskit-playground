@@ -12,7 +12,7 @@ RUN apt-get update -y \
   && pip install qiskit \
   && pip install qiskit-ibm-runtime \
   && pip install 'qiskit[visualization]' \
-  && pip install qiskit-aer-gpu \
+  && pip install qiskit-aer \
   && apt-get autoremove -y \
   && apt-get clean \
   && rm -rf /var/cache/apt/* /var/lib/apt/lists/
