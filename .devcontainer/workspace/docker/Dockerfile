@@ -7,6 +7,8 @@ RUN apt-get update -y \
     curl \
     gnupg \
     lsb-release \
+    libopenblas-base \
+    libopenblas-openmp-dev \
   && pip install --upgrade pip \
   && pip install jupyterlab \
   && pip install qiskit \
